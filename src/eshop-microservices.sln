@@ -3,9 +3,38 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{F612B17B-7DC4-497A-AAF8-30F4879D220A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{E49E46E3-9A24-4738-A695-60F3D19A8144}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{365C1D19-4A6A-425D-9061-E6D5361C37E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{24F8C0A0-8ED4-41F6-AE95-A854E4D47DE3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks", "..\..\run-aspnetcore-microservices-master-dotnet8\src\BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{D8C50981-9868-4E54-B60C-50C06D91B658}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{365C1D19-4A6A-425D-9061-E6D5361C37E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{365C1D19-4A6A-425D-9061-E6D5361C37E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{365C1D19-4A6A-425D-9061-E6D5361C37E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{365C1D19-4A6A-425D-9061-E6D5361C37E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8C50981-9868-4E54-B60C-50C06D91B658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8C50981-9868-4E54-B60C-50C06D91B658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8C50981-9868-4E54-B60C-50C06D91B658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8C50981-9868-4E54-B60C-50C06D91B658}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E49E46E3-9A24-4738-A695-60F3D19A8144} = {F612B17B-7DC4-497A-AAF8-30F4879D220A}
+		{365C1D19-4A6A-425D-9061-E6D5361C37E9} = {E49E46E3-9A24-4738-A695-60F3D19A8144}
+		{D8C50981-9868-4E54-B60C-50C06D91B658} = {24F8C0A0-8ED4-41F6-AE95-A854E4D47DE3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2D1816FA-D3F6-4E15-8D60-AE4BF927D4D7}
